@@ -1,0 +1,135 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739269766;s:6:"expire";i:1739356166;s:4:"tags";s:45:"318_BLOCK_HTML,318_CAT_P_2,318_CAT_P,318_MAGE";}
+<div class="price-box price-final_price" data-role="priceBox" data-product-id="2" data-price-box="product-id-2"><div class="debugging-hints" id="hintsId_ONBI4WU4NpLeNAFd95SJt2TdeJHJlJqp">
+<div class="debugging-hint-template-file" id="hintsTemplateFileId_aLcKP5KTtNnfjqZCv0VPApokwxPs4xF1" title="D:/xamp8.0/htdocs/VJ/vendor/magento/module-catalog/view/base/templates/product/price/final_price.phtml">D:/xamp8.0/htdocs/VJ/vendor/magento/module-catalog/view/base/templates/product/price/final_price.phtml</div>
+
+    <div class="debugging-hints" id="hintsId_mkvD0kET344ZhMSFRo0pdi7eJovag1eb">
+<div class="debugging-hint-template-file" id="hintsTemplateFileId_bHl9XEz8jzVI3z9G4zfuVD891J5jzqkr" title="D:/xamp8.0/htdocs/VJ/vendor/magento/module-catalog/view/base/templates/product/price/amount/default.phtml">D:/xamp8.0/htdocs/VJ/vendor/magento/module-catalog/view/base/templates/product/price/amount/default.phtml</div>
+
+
+<span class="price-container price-final_price&#x20;tax&#x20;weee"
+        >
+        <span  id="product-price-2"                data-price-amount="373092"
+        data-price-type="finalPrice"
+        class="price-wrapper "
+    ><span class="price">₹373,092.00</span></span>
+        </span>
+
+</div><script type="text&#x2F;javascript">    var elembPuH1ZBpArray = document.querySelectorAll('#hintsId_mkvD0kET344ZhMSFRo0pdi7eJovag1eb');
+    if(elembPuH1ZBpArray.length !== 'undefined'){
+        elembPuH1ZBpArray.forEach(function(element) {
+            if (element) {
+                element.style.position = 'relative';
+element.style.border = '1px dotted red';
+element.style.margin = '6px 2px';
+element.style.padding = '18px 2px 2px 2px';
+
+            }
+        });
+    }</script><script type="text&#x2F;javascript">    var elemvsWBpxPPArray = document.querySelectorAll('#hintsTemplateFileId_bHl9XEz8jzVI3z9G4zfuVD891J5jzqkr');
+    if(elemvsWBpxPPArray.length !== 'undefined'){
+        elemvsWBpxPPArray.forEach(function(element) {
+            if (element) {
+                element.style.position = 'absolute';
+element.style.top = '0';
+element.style.padding = '2px 5px';
+element.style.font = 'normal 11px Arial';
+element.style.background = 'red';
+element.style.left = '0';
+element.style.color = 'white';
+element.style.whiteSpace = 'nowrap';
+
+            }
+        });
+    }</script><script type="text&#x2F;javascript">    function eventListenerSuusy9EQDC () {
+        this.style.zIndex = 999;;
+    }
+    var listenedElementSuusy9EQDCArray = document.querySelectorAll("#hintsTemplateFileId_bHl9XEz8jzVI3z9G4zfuVD891J5jzqkr");
+    if(listenedElementSuusy9EQDCArray.length !== 'undefined'){
+        listenedElementSuusy9EQDCArray.forEach(function(element) {
+            if (element) {
+                element.onmouseover = function (event) {
+                    var targetElement = element;
+                    if (event && event.target) {
+                        targetElement = event.target;
+                    }
+                    return eventListenerSuusy9EQDC.apply(targetElement);
+                };
+            }
+        });
+    }</script><script type="text&#x2F;javascript">    function eventListenerkKvyKVLzCp () {
+        this.style.zIndex = 'auto';;
+    }
+    var listenedElementkKvyKVLzCpArray = document.querySelectorAll("#hintsTemplateFileId_bHl9XEz8jzVI3z9G4zfuVD891J5jzqkr");
+    if(listenedElementkKvyKVLzCpArray.length !== 'undefined'){
+        listenedElementkKvyKVLzCpArray.forEach(function(element) {
+            if (element) {
+                element.onmouseout = function (event) {
+                    var targetElement = element;
+                    if (event && event.target) {
+                        targetElement = event.target;
+                    }
+                    return eventListenerkKvyKVLzCp.apply(targetElement);
+                };
+            }
+        });
+    }</script>
+
+</div><script type="text&#x2F;javascript">    var elemIqNI9EHcArray = document.querySelectorAll('#hintsId_ONBI4WU4NpLeNAFd95SJt2TdeJHJlJqp');
+    if(elemIqNI9EHcArray.length !== 'undefined'){
+        elemIqNI9EHcArray.forEach(function(element) {
+            if (element) {
+                element.style.position = 'relative';
+element.style.border = '1px dotted red';
+element.style.margin = '6px 2px';
+element.style.padding = '18px 2px 2px 2px';
+
+            }
+        });
+    }</script><script type="text&#x2F;javascript">    var elemMHR5QDU9Array = document.querySelectorAll('#hintsTemplateFileId_aLcKP5KTtNnfjqZCv0VPApokwxPs4xF1');
+    if(elemMHR5QDU9Array.length !== 'undefined'){
+        elemMHR5QDU9Array.forEach(function(element) {
+            if (element) {
+                element.style.position = 'absolute';
+element.style.top = '0';
+element.style.padding = '2px 5px';
+element.style.font = 'normal 11px Arial';
+element.style.background = 'red';
+element.style.left = '0';
+element.style.color = 'white';
+element.style.whiteSpace = 'nowrap';
+
+            }
+        });
+    }</script><script type="text&#x2F;javascript">    function eventListenerl2qI4aMUJF () {
+        this.style.zIndex = 999;;
+    }
+    var listenedElementl2qI4aMUJFArray = document.querySelectorAll("#hintsTemplateFileId_aLcKP5KTtNnfjqZCv0VPApokwxPs4xF1");
+    if(listenedElementl2qI4aMUJFArray.length !== 'undefined'){
+        listenedElementl2qI4aMUJFArray.forEach(function(element) {
+            if (element) {
+                element.onmouseover = function (event) {
+                    var targetElement = element;
+                    if (event && event.target) {
+                        targetElement = event.target;
+                    }
+                    return eventListenerl2qI4aMUJF.apply(targetElement);
+                };
+            }
+        });
+    }</script><script type="text&#x2F;javascript">    function eventListenerkO3lbWvnCg () {
+        this.style.zIndex = 'auto';;
+    }
+    var listenedElementkO3lbWvnCgArray = document.querySelectorAll("#hintsTemplateFileId_aLcKP5KTtNnfjqZCv0VPApokwxPs4xF1");
+    if(listenedElementkO3lbWvnCgArray.length !== 'undefined'){
+        listenedElementkO3lbWvnCgArray.forEach(function(element) {
+            if (element) {
+                element.onmouseout = function (event) {
+                    var targetElement = element;
+                    if (event && event.target) {
+                        targetElement = event.target;
+                    }
+                    return eventListenerkO3lbWvnCg.apply(targetElement);
+                };
+            }
+        });
+    }</script></div>
