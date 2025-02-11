@@ -1,0 +1,40 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Section 1: Carousel -->
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.homepage.carousel" template="Magento_Theme::html/homepage_carousel.phtml" after="-"/>
+        </referenceContainer>
+
+        <!-- Section 2: Grid -->
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.homepage.grid" template="Magento_Theme::html/homepage_grid.phtml" after="custom.homepage.carousel"/>
+        </referenceContainer>
+
+        <!-- Section 3: Golden Product Grid -->
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.homepage.gold_grid" template="Magento_Theme::html/homepage_gold_grid.phtml" after="custom.homepage.grid"/>
+        </referenceContainer>
+
+
+        <!-- Section 4: Attribute Grid -->
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.homepage.grid3" template="Magento_Theme::html/homepage_grid3.phtml" after="custom.homepage.gold_grid"/>
+        </referenceContainer>
+
+        <!-- Section 5 -->
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.homepage.grid4" template="Magento_Theme::html/homepage_grid4.phtml" after="custom.homepage.grid3"/>
+        </referenceContainer>
+
+        <!-- Section 6 -->
+        <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.homepage.grid5" template="Magento_Theme::html/homepage_grid5.phtml" after="custom.homepage.grid4"/>
+        </referenceContainer>
+
+        <!-- Section 5: Testimonials -->
+        <!-- <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="custom.homepage.testimonials" template="Magento_Theme::html/homepage_testimonials.phtml" after="custom.homepage.banner"/>
+        </referenceContainer> -->
+    </body>
+</page>

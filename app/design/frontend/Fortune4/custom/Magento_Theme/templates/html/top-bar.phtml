@@ -1,0 +1,57 @@
+<?php
+/** Get Store URL */
+$storeUrl = $block->getUrl(''); 
+
+?>
+
+<html>
+<head>
+    <title>Vaibhav Jewellers</title>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="contact-info">
+            <i class="fab fa-whatsapp"></i> +91 9177403000
+        </div>
+        <div class="shipping-info">
+            International Shipping Available
+        </div>
+    </div>
+    <div class="header">
+        <div class="left-links">
+            <a href="<?php echo $block->getUrl('customer/account/login'); ?>"><i class="fas fa-user-lock"></i> Login</a>
+            <a href="<?php echo $block->getUrl('customer/account/create'); ?>"><i class="fas fa-sign-out-alt"></i> Register</a>
+            <a href="<?php echo $block->getUrl('wishlist'); ?>"><i class="fas fa-heart"></i> Wishlist</a>
+        </div>
+        <div class="logo">
+            <a class="logo" href="<?= $storeUrl ?>" title="" aria-label="store logo">
+                <img src="http://vjapp.com:8080/media/.thumbswysiwyg/logo-converted.jpeg?rand=1738645443" alt="Vaibhav Jewellers Logo" height="50" width="170"/>
+            </a>
+        </div>
+        <div class="right-links">
+            <div class="search">
+                <!-- <form action="<?php echo $block->getUrl('catalogsearch/result'); ?>" method="get" class="search-form">
+                    <input type="text" name="q" placeholder="Search products..." />
+                    <button type="submit">Search</button>
+                </form> -->
+                <a href="#"><i class="fas fa-search"></i></a>
+            </div>
+            <div class="dropdown">
+                <a href="#" class="dropbtn">Metal Rate <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="#">Gold</a>
+                    <a href="#">Silver</a>
+                </div>
+            </div>
+            <div class="cart">
+                <a href="<?php echo $block->getUrl('checkout/cart'); ?>" class="action showcart"><i class="fas fa-shopping-cart"></i></a>
+            </div>
+            <div class="currency">
+                <a href="#">INR</a>
+            </div>
+            
+        </div>
+    </div>
+   
+</body>
+</html>

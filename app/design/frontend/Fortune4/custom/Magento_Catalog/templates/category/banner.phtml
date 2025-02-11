@@ -1,0 +1,16 @@
+<?php
+
+$objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+$currentCategory = $objectManager->get('Magento\Framework\Registry')->registry('current_category');//get current category
+$category_name = $currentCategory->getName();
+// echo $currentCategory->getId()."<br>";
+// echo $currentCategory->getName();
+$bannerBlockId = strtolower(str_replace(" ","-",$category_name))."-banner";
+
+// echo "bannerBlockId =>".$bannerBlockId;
+// die;
+echo $this->getLayout()
+    ->createBlock('Magento\Cms\Block\Block')
+    ->setBlockId($bannerBlockId)
+    ->toHtml();
+?>

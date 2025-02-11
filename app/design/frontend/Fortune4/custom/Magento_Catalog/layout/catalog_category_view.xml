@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<page 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+    xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!-- Remove the layered navigation (filter) block -->
+        <!-- <referenceBlock name="catalog.leftnav" remove="true"/> -->
+
+        <!-- Remove the additional sidebar container -->
+        <!-- <referenceContainer name="sidebar.additional" remove="true"/> -->
+        
+        <!-- <referenceContainer name="content">
+            <block class="Magento\Framework\View\Element\Template" name="category.banner" template="Magento_Catalog::category/gold_banner.phtml" before="breadcrumbs"/>
+        </referenceContainer> -->
+
+         <!-- Insert the full-width banner block after the menubar -->
+        <referenceContainer name="page.wrapper">
+            <block class="Magento\Framework\View\Element\Template" name="category.banner" template="Magento_Catalog::category/banner.phtml" after="custom.top.menu" />
+        </referenceContainer>
+       
+    </body>
+</page>

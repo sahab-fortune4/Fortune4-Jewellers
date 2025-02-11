@@ -1,0 +1,30 @@
+<div class="carousel-container">
+    <div class="carousel">
+        <div class="carousel-item">
+            <img src="http://vjapp.com:8080/media/wysiwyg/homepage_slider/7_Advantages_web-converted.jpeg" alt="Image 1">
+        </div>
+        <div class="carousel-item">
+            <img src="http://vjapp.com:8080/media/wysiwyg/homepage_slider/chains_mela_web-converted.jpeg" alt="Image 2">
+        </div>
+        <div class="carousel-item">
+            <img src="http://vjapp.com:8080/media/wysiwyg/homepage_slider/earrings_web-converted.jpeg" alt="Image 3">
+        </div>
+        <div class="carousel-item">
+            <img src="http://vjapp.com:8080/media/wysiwyg/homepage_slider/jpo_web-converted.jpeg" alt="Image 4">
+        </div>
+    </div>
+</div>
+
+<script>
+    require(['jquery'], function($) {
+        $(document).ready(function() {
+            $('.carousel').slick({
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                arrows: true
+            });
+        });
+    });
+</script>
