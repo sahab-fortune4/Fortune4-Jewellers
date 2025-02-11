@@ -17,6 +17,9 @@
         <referenceContainer name="page.wrapper">
             <block class="Magento\Framework\View\Element\Template" name="category.banner" template="Magento_Catalog::category/banner.phtml" after="custom.top.menu" />
         </referenceContainer>
+
+        <!-- Move the layered navigation block to appear after the banner -->
+        <move element="catalog.leftnav" destination="page.wrapper" after="category.banner" />
        
     </body>
 </page>

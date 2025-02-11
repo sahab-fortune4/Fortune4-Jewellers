@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739269764;s:6:"expire";i:1770805764;s:4:"tags";s:37:"318_LAYOUT_GENERAL_CACHE_TAG,318_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739271970;s:6:"expire";i:1770807970;s:4:"tags";s:37:"318_LAYOUT_GENERAL_CACHE_TAG,318_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -7241,6 +7241,7 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739269764;s:6:"expire";i:1770805764;s:4:"t
    <referenceContainer name="page.wrapper">
       <block class="Magento\Framework\View\Element\Template" name="category.banner" template="Magento_Catalog::category/banner.phtml" after="custom.top.menu"/>
    </referenceContainer>
+   <move element="catalog.leftnav" destination="page.wrapper" after="category.banner"/>
 </body>
 </handle><layout id="1column"><update handle="empty"/>
 <referenceContainer name="page.wrapper">
