@@ -83,19 +83,6 @@ body {
 .header .right-links .search {
     margin-right: 10px;
 }
-/* .nav-bar {
-    display: flex;
-    justify-content: center;
-    padding: 10px 0;
-    background-color: white;
-    list-style: none;
-}
-.nav-bar a {
-    margin: 0 15px;
-    text-decoration: none;
-    color: #6A1B9A;
-    font-weight: 500;
-} */
 .menu-dropdown-row {
     padding-top: 20px;
     margin-top: -3px !important;
@@ -260,4 +247,62 @@ li.categories:hover:before {
 
 .categories {
     position: relative;
+}
+
+
+/* Basic horizontal navbar style for filters */
+
+.filter-navbar {
+    display: flex;
+    background-color: #6a1b9a;
+    padding-left: 3rem;
+    /* padding: 10px; */
+    /* justify-content: space-around; */
+    align-items: center;
+}
+.filter-navbar > div {
+    position: relative;
+    border-right: 1px solid #fff;
+}
+
+.filter-navbar > div :hover {
+    background-color: #99188E;
+}
+.filter-navbar button {
+    background-color: #6a1b9a;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.filter-navbar button .fa-chevron-down {
+    margin-left: 10px;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+.filter-navbar div:hover .dropdown-content {
+    display: block;
+}
+@media (max-width: 768px) {
+    .filter-navbar {
+        flex-direction: column;
+    }
 }
