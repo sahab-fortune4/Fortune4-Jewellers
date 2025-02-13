@@ -9,9 +9,6 @@
         <!-- Remove the additional sidebar container -->
         <referenceContainer name="sidebar.additional" remove="true"/>
         
-        <!-- <referenceContainer name="content">
-            <block class="Magento\Framework\View\Element\Template" name="category.banner" template="Magento_Catalog::category/gold_banner.phtml" before="breadcrumbs"/>
-        </referenceContainer> --> 
 
         <!-- Insert the full-width banner block after the menubar -->
         <referenceContainer name="page.wrapper">

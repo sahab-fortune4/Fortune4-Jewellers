@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<!--
+  This file extends the core "General" configuration section by adding a new group.
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <!-- Reference the existing "general" section -->
+        <section id="general">
+            <!-- Add a new group named "jewellery_settings" -->
+            <group id="metalprice" translate="label" type="text" sortOrder="180" showInDefault="1" showInWebsite="1" showInStore="1">
+                <label>Metal Price Configuration</label>
+
+                <field id="enable" translate="label" type="select" sortOrder="1" showInDefault="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                </field>
+                <!-- You can add fields inside this group -->
+                <field id="gold_18k_price" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Gold 18K/1G Price</label>
+                    <validate>required-entry validate-number</validate>
+                    <comment>Enter Gold Rate</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+
+                <field id="gold_22k_price" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Gold 22K/1G Price</label>
+                    <validate>required-entry validate-number</validate>
+                    <comment>Enter Gold Rate</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+
+                <field id="gold_24k_price" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Gold 24K/1G Price</label>
+                    <validate>required-entry validate-number</validate>
+                    <comment>Enter Gold Rate</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+
+                <!-- You can add fields inside this group -->
+                <field id="silver_price" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Silver Price</label>
+                    <validate>required-entry validate-number</validate>
+                    <comment>Enter Silver Rate</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+
+                  <!-- You can add fields inside this group -->
+                <field id="diamond_price" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Diamond Price</label>
+                    <validate>required-entry validate-number</validate>
+                    <comment>Enter Diamond Rate</comment>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
