@@ -7,19 +7,23 @@
         <!-- <referenceBlock name="catalog.leftnav" remove="true"/> -->
 
         <!-- Remove the additional sidebar container -->
-        <!-- <referenceContainer name="sidebar.additional" remove="true"/> -->
+        <referenceContainer name="sidebar.additional" remove="true"/>
         
         <!-- <referenceContainer name="content">
             <block class="Magento\Framework\View\Element\Template" name="category.banner" template="Magento_Catalog::category/gold_banner.phtml" before="breadcrumbs"/>
-        </referenceContainer> -->
+        </referenceContainer> --> 
 
-         <!-- Insert the full-width banner block after the menubar -->
+        <!-- Insert the full-width banner block after the menubar -->
         <referenceContainer name="page.wrapper">
             <block class="Magento\Framework\View\Element\Template" name="category.banner" template="Magento_Catalog::category/banner.phtml" after="custom.top.menu" />
         </referenceContainer>
 
+
         <!-- Move the layered navigation block to appear after the banner -->
         <move element="catalog.leftnav" destination="page.wrapper" after="category.banner" />
-       
+        <!-- Move the new sorter block so that it appears after breadcrumbs -->
+        <!-- <move element="product_list_toolbar_sorter" destination="page.top" after="breadcrumbs" /> -->
+       <move element="product_list_toolbar" destination="page.top" after="breadcrumbs" />
+
     </body>
 </page>

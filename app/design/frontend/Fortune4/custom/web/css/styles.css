@@ -265,7 +265,7 @@ li.categories:hover:before {
     border-right: 1px solid #fff;
 }
 
-.filter-navbar > div :hover {
+.filter-navbar .navbar-item :hover {
     background-color: #99188E;
 }
 .filter-navbar button {
@@ -305,4 +305,38 @@ li.categories:hover:before {
     .filter-navbar {
         flex-direction: column;
     }
+}
+
+
+/* Sorter in Product Listing Page */
+.sorting {
+    padding: 10px 5rem;
+    margin: 10px 0 0;
+    border: 1px solid #e7e7e7;
+    border-width: 1px 0;
+}
+.sorter-options {
+    margin: 0 5px 0 7px;
+    width: auto;
+}
+.sort-items:first-child {
+    border: 0;
+}
+.toolbar-sorter li {
+    margin-bottom: 0 !important;
+}
+
+.sort-items {
+    cursor: pointer;
+    padding: 0 10px;
+    display: inline-block;
+    border-left: 1px solid;
+}
+
+.sort-items > a {
+    text-decoration: none;
+}
+
+.sort-items.active > a {
+    color: #ee853c;
 }
