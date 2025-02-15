@@ -14,6 +14,8 @@ $storeUrl = $block->getUrl('');
             $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
             $scopeConfig = $objectManager->get('\Magento\Framework\App\Config\ScopeConfigInterface');
             
+            $storeManager = $objectManager->get('\Magento\Store\Model\StoreManagerInterface');
+
             $address = $scopeConfig->getValue('general/store_information/street_line1', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
             
             $phone_number = $scopeConfig->getValue('general/store_information/phone', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
@@ -53,9 +55,9 @@ $storeUrl = $block->getUrl('');
             <div class="dropdown">
                 <a href="#" class="dropbtns">Metal Rate <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#" class="m-0">Gold-22k/1g- <?php echo $silver_price; ?></a>
-                    <a href="#" class="m-0">Gold-22k/1g- <?php echo $silver_price; ?></a>
-                    <a href="#" class="m-0">Gold-22k/1g-  <?php echo $silver_price; ?></a>
+                    <a href="#" class="m-0">Gold-18k/1g- <?php echo $gold_18k_price; ?></a>
+                    <a href="#" class="m-0">Gold-22k/1g- <?php echo $gold_22k_price; ?></a>
+                    <a href="#" class="m-0">Gold-24k/1g-  <?php echo $gold_24k_price; ?></a>
                     <a href="#" class="m-0">Silver-1g- <?php echo $silver_price; ?></a>
                 </div>
             </div>
@@ -63,7 +65,7 @@ $storeUrl = $block->getUrl('');
                 <a href="<?php echo $block->getUrl('checkout/cart'); ?>" class="action showcart"><i class="fas fa-shopping-cart"></i></a>
             </div>
             <div class="currency">
-                <a href="#">INR</a>
+                <a href="#"> <?php echo $storeManager->getStore()->getCurrentCurrencyCode(); ?></a>
             </div>
             
         </div>
