@@ -46,6 +46,16 @@ class MetalPriceService
     public function fetchMetalRates()
     {
         try {
+            // Retrieve configuration values (ensure these are set via Stores > Configuration)
+            // $apiKey = $this->scopeConfig->getValue('metalprice/general/api_key', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+            // $currency = $this->scopeConfig->getValue('metalprice/general/currency', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+            // $unit = $this->scopeConfig->getValue('metalprice/general/unit', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+
+            // if (!$apiKey) {
+            //     $this->logger->error("MetalPrice API Key is not configured.");
+            //     return [];
+            // }
+
             // For demo, we're hardcoding the API key and parameters.
             // In a real-world scenario, these should be stored in configuration.
             $apiKey = 'XXXXXXXX23232323'; // Replace with your actual API key.

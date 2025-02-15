@@ -10,11 +10,25 @@ $storeUrl = $block->getUrl('');
 </head>
 <body>
     <div class="top-bar">
+        <?php 
+            $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+            $scopeConfig = $objectManager->get('\Magento\Framework\App\Config\ScopeConfigInterface');
+            
+            $address = $scopeConfig->getValue('general/store_information/street_line1', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+            
+            $phone_number = $scopeConfig->getValue('general/store_information/phone', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+
+            $gold_18k_price = $scopeConfig->getValue('general/metalprice/gold_18k_price', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+            $gold_22k_price = $scopeConfig->getValue('general/metalprice/gold_22k_price', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+            $gold_24k_price = $scopeConfig->getValue('general/metalprice/gold_24k_price', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+
+            $silver_price = $scopeConfig->getValue('general/metalprice/silver_price', \Magento\Store\Model\ScopeInterface::SCOPE_STORE);
+        ?>
         <div class="contact-info">
-            <i class="fab fa-whatsapp"></i> +91 9177403000
+            <i class="fab fa-whatsapp"></i> +<?php echo $phone_number; ?>
         </div>
         <div class="shipping-info">
-            International Shipping Available
+            <?php echo $address; ?>
         </div>
     </div>
     <div class="header">
@@ -37,10 +51,12 @@ $storeUrl = $block->getUrl('');
                 <a href="#"><i class="fas fa-search"></i></a>
             </div>
             <div class="dropdown">
-                <a href="#" class="dropbtn">Metal Rate <i class="fas fa-caret-down"></i></a>
+                <a href="#" class="dropbtns">Metal Rate <i class="fas fa-caret-down"></i></a>
                 <div class="dropdown-content">
-                    <a href="#">Gold</a>
-                    <a href="#">Silver</a>
+                    <a href="#" class="m-0">Gold-22k/1g- <?php echo $silver_price; ?></a>
+                    <a href="#" class="m-0">Gold-22k/1g- <?php echo $silver_price; ?></a>
+                    <a href="#" class="m-0">Gold-22k/1g-  <?php echo $silver_price; ?></a>
+                    <a href="#" class="m-0">Silver-1g- <?php echo $silver_price; ?></a>
                 </div>
             </div>
             <div class="cart">
