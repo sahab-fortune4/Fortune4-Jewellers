@@ -354,7 +354,8 @@ li.categories:hover:before {
     margin: 0;
 }
 .st-page-banner {
-    background-color: #8A2BE2;
+    background-color: #8a2be2;
+    color: white;
     text-align: center;
     padding: 50px 0;
     position: relative;
@@ -383,4 +384,61 @@ li.categories:hover:before {
     font-size: 16px;
     color: #333;
     line-height: 1.6;
+}
+
+
+/* Chatbot css */
+
+.chat-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #8a2be2;
+    color: white;
+    border-radius: 50%;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    font-size: 24px;
+    cursor: pointer;
+}
+.chatbox {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    width: 300px;
+    max-width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: none;
+    z-index: 1000;
+}
+.chatbox-header {
+    background-color: #8a2be2;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor: move;
+}
+.chatbox-body {
+    padding: 10px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+.chatbox-footer {
+    padding: 10px;
+    border-top: 1px solid #ccc;
+}
+.chatbox-footer input {
+    width: calc(100% - 50px);
+    padding: 5px;
+}
+.chatbox-footer button {
+    width: 40px;
+    background-color: #8a2be2;
+    color: white;
+    border: none;
+    border-radius: 5px;
 }
