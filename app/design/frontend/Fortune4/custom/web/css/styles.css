@@ -343,18 +343,19 @@ li.categories:hover:before {
 
 
 /* Custom Page Styles */
-.st-page-header {
+.page-title-wrapper {
     background-color: white;
     padding: 20px;
     text-align: left;
 }
-.st-page-header h1 {
+.page-title-wrapper h1 {
     color: #8A2BE2;
     font-size: 24px;
     margin: 0;
 }
 .st-page-banner {
-    background-color: #8A2BE2;
+    background-color: #8a2be2;
+    color: white;
     text-align: center;
     padding: 50px 0;
     position: relative;
