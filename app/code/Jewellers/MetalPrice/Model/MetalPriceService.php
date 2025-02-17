@@ -6,6 +6,7 @@ use Magento\Catalog\Model\ResourceModel\Product\CollectionFactory as ProductColl
 use Magento\Catalog\Api\ProductRepositoryInterface; // To load/save products
 use Psr\Log\LoggerInterface; // For logging errors/debug info
 use Magento\Framework\App\Config\ScopeConfigInterface; // For reading system configuration
+use Magento\Framework\App\Config\Storage\WriterInterface; // For saving configuration values
 
 class MetalPriceService
 {
@@ -14,7 +15,7 @@ class MetalPriceService
     protected $logger; 
     protected $scopeConfig;
     protected $productRepository;
-
+    protected $configWriter;
     /**
      * Constructor.
      *
@@ -22,20 +23,23 @@ class MetalPriceService
      * @param ProductCollectionFactory $productCollectionFactory
      * @param LoggerInterface $logger
      * @param ScopeConfigInterface $scopeConfig
-     * @param ProductRepositoryInterface $productRepository
+     * @param ProductRepositoryInterface $
+     * @param WriterInterface $configWriter
      */
     public function __construct(
         Curl $curl,
         ProductCollectionFactory $productCollectionFactory,
         LoggerInterface $logger,
         ScopeConfigInterface $scopeConfig,
-        ProductRepositoryInterface $productRepository
+        ProductRepositoryInterface $productRepository,
+        WriterInterface $configWriter
     ) {
         $this->curl = $curl;
         $this->productCollectionFactory = $productCollectionFactory;
         $this->logger = $logger;
         $this->scopeConfig = $scopeConfig;
         $this->productRepository = $productRepository;
+        $this->configWriter = $configWriter;
     }
 
     /**
@@ -112,9 +116,9 @@ class MetalPriceService
                 'name',               
                 'jewelry_type',       
                 'making_charge',      
-                'metal',              // The metal attribute (should be a dropdown with values like "Gold", "Silver", etc.)
-                'purity',             // For gold, purity (e.g., 18, 22, or 24)
-                'weight'              // Metal weight in grams
+                'metal',              
+                'purity', 
+                'weight'              
             ])
             ->addAttributeToFilter('metal', ['neq' => ''])  // Only products with a metal value.
             ->addAttributeToFilter('status', 1)             // Only enabled products.
@@ -145,31 +149,30 @@ class MetalPriceService
      */
     public function updateProductPrices()
     {
-        // For demonstration, we simulate the API response.
-        // In a real scenario, call fetchMetalRates() to get the dynamic data.
+        // For demonstration, we simulate the API 
+        // $metalRates = $this->fetchMetalRates();
         $metalRates = [
-            'gold' => 8190.3291,   // 24K gold rate per gram
-            'silver' => 92.7928,   // Silver rate per gram
+            'gold' => 8190.3291,   
+            'silver' => 92.7928,   
             'platinum' => 2800.6105,
             'palladium' => 2795.7848,
-            // add additional metals as needed.
         ];
 
         // GST percentages (these can also be set in configuration)
-        $gstOnMetalsPercent = 3;          // e.g., 3% GST on metal value
-        $gstOnMakingChargePercent = 5;    // e.g., 5% GST on making charge
+        $gstOnMetalsPercent = 3;          
+        $gstOnMakingChargePercent = 5;    
 
         $collection = $this->getProductsWithMetal();
 
         foreach ($collection as $product) {
-            // Get the metal type label (e.g., "Gold") and convert to lowercase for lookup.
+            
             $metalType = strtolower($product->getAttributeText('metal'));
-            // Get purity for gold (if applicable). Default to 24 if not set.
+            
             $purity = (float)$product->getData('purity');
             if (!$purity) {
                 $purity = 24;
             }
-            // Get metal weight in grams.
+            
             $metalWeight = (float)$product->getData('weight');
             // Get making charge percentage (e.g., 10 means 10%).
             $makingChargePercent = (float)$product->getData('making_charge');
@@ -181,16 +184,16 @@ class MetalPriceService
                 if ($metalType === 'gold') {
                     switch ($purity) {
                         case 24:
-                            $effectiveRate = $rateFor24K; // 24K gold uses the full rate.
+                            $effectiveRate = $rateFor24K; 
                             break;
                         case 22:
-                            $effectiveRate = $rateFor24K * (22 / 24); // 22K gold.
+                            $effectiveRate = $rateFor24K * (22 / 24); 
                             break;
                         case 18:
-                            $effectiveRate = $rateFor24K * (18 / 24); // 18K gold.
+                            $effectiveRate = $rateFor24K * (18 / 24); 
                             break;
                         default:
-                            $effectiveRate = $rateFor24K * ($purity / 24); // Default proportional calculation.
+                            $effectiveRate = $rateFor24K * ($purity / 24); 
                             break;
                     }
                 } else {
@@ -216,6 +219,8 @@ class MetalPriceService
                     // Save product and log the update.
                     $this->productRepository->save($product);
                     $this->logger->debug("Updated product ID " . $product->getId() . " with new price: " . $newPrice);
+                    // $this->configWriter->save('general/metalprice/gold_18k_price', $newPrice);
+                    // $this->logger->debug("Saved gold 18K price in configuration: " . $newPrice);
                 } catch (\Exception $e) {
                     $this->logger->error("Error updating product ID " . $product->getId() . ": " . $e->getMessage());
                 }
