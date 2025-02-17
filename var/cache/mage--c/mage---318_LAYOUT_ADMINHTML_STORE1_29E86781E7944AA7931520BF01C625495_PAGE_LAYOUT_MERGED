@@ -1,0 +1,2 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739794034;s:6:"expire";i:1771330034;s:4:"tags";s:74:"318_MAGEPALSMTP_VALIDATECONFIG_INDEX,318_LAYOUT_GENERAL_CACHE_TAG,318_MAGE";}
+{"pageLayout":"","layout":"<container name=\"root\">\n   <block class=\"MagePal\\GmailSmtpApp\\Block\\Adminhtml\\ValidateConfig\" name=\"magepal.smtp_validate\" template=\"MagePal_GmailSmtpApp::validateConfig\/result.phtml\"\/>\n<\/container>\n"}
