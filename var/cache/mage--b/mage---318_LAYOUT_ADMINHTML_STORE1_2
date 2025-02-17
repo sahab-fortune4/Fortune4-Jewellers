@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739772466;s:6:"expire";i:1771308466;s:4:"tags";s:37:"318_LAYOUT_GENERAL_CACHE_TAG,318_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739790275;s:6:"expire";i:1771326275;s:4:"tags";s:37:"318_LAYOUT_GENERAL_CACHE_TAG,318_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="adminhtml_system_config_edit" layout="admin-2columns-left"><body>
    <referenceContainer name="js">
@@ -8105,6 +8105,17 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739772466;s:6:"expire";i:1771308466;s:4:"t
       </block>
    </block>
    <block class="Magento\Catalog\Block\Adminhtml\Product\Composite\Configure" template="Magento_Catalog::catalog/product/composite/configure.phtml" name="configure.popup"/>
+</container>
+</layout><handle id="adminhtml_system_config_edit"><head>
+   <css src="MagePal_Core::css/config.css"/>
+</head>
+<body>
+   <referenceContainer name="content">
+      <block class="MagePal\Core\Block\Adminhtml\Badge" name="magepal_email_edit" template="MagePal_Core::badge.phtml"/>
+   </referenceContainer>
+</body>
+</handle><layout id="magepalsmtp_validateconfig_index"><container name="root">
+   <block class="MagePal\GmailSmtpApp\Block\Adminhtml\ValidateConfig" name="magepal.smtp_validate" template="MagePal_GmailSmtpApp::validateConfig/result.phtml"/>
 </container>
 </layout><handle id="adminhtml_system_config_edit"><head>
    <css src="PayPal_Braintree::styles.css"/>

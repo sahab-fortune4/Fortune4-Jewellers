@@ -328,6 +328,8 @@ return [
         'Magento_WishlistAnalytics' => 1,
         'Magento_WishlistGraphQl' => 1,
         'Jewellers_MetalPrice' => 1,
+        'MagePal_Core' => 1,
+        'MagePal_GmailSmtpApp' => 1,
         'PayPal_Braintree' => 1,
         'PayPal_BraintreeGraphQl' => 1,
         'Temando_ShippingRemover' => 1

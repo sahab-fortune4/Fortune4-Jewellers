@@ -1,0 +1,350 @@
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1739791057;s:6:"expire";i:1739794657;s:4:"tags";s:117:"318_BLOCK_HTML,318_CAT_C,318_CAT_C_3,318_CAT_C_4,318_CAT_C_5,318_CAT_C_6,318_CAT_C_7,318_CAT_C_8,318_CAT_C_9,318_MAGE";}
+
+<div class="nav-bar">
+    <ul class="custom-menu">
+                    <li class="categories">
+                <!-- Parent category link -->
+                <a class="level-top" href="http://vjapp.com:8080/gold.html">
+                    Gold                </a>
+
+                                    <div class="menu-dropdown container-fluid" style="top: auto;">
+                        <div class="row menu-dropdown-row">
+                            <!-- Left portion (Main Shop By Category and subcategories) -->
+                            <div class="col-md-8 menu-list">
+                                <div class="row">
+                                    <div class="col-md-10 main-shopby">
+                                        <h5 style="margin-bottom: 15px; margin-left: 10px; font-weight: bold; color: #000;">
+                                            SHOP BY CATEGORY
+                                        </h5>
+                                        <div class="row">
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Women                                                    </h2>
+                                                                                                            <ul class="list-unstyled">
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/bangles.html">
+                                                                        Bangles                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/harams.html">
+                                                                        Harams                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/vaddanam.html">
+                                                                        Vaddanam                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/locket.html">
+                                                                        Locket                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/vanky.html">
+                                                                        Vanky                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/chains.html">
+                                                                        Chains                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/rings.html">
+                                                                         Rings                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/maang-tikka.html">
+                                                                        Maang Tikka                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/necklace.html">
+                                                                         Necklace                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/earrings.html">
+                                                                         Earrings                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/pendants.html">
+                                                                        Pendants                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/mangalsutra.html">
+                                                                        Mangalsutra                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/chokers.html">
+                                                                        Chokers                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/bracelets.html">
+                                                                        Bracelets                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/women/accessories.html">
+                                                                        Accessories                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </div>
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Men                                                    </h2>
+                                                                                                            <ul class="list-unstyled">
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/men/rings.html">
+                                                                        Rings                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/men/bracelets.html">
+                                                                        Bracelets                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/men/chains.html">
+                                                                        Chains                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/men/accessories.html">
+                                                                        Accessories                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </div>
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Kids                                                    </h2>
+                                                                                                            <ul class="list-unstyled">
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/kids/bangles.html">
+                                                                        Bangles                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/kids/bracelets.html">
+                                                                        Bracelets                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/kids/maang-tikka.html">
+                                                                        Maang Tikka                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/kids/rings.html">
+                                                                        Rings                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/gold/kids/accessories.html">
+                                                                        Accessories                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </div>
+                                                                                    </div>
+                                    </div>
+                                    <!-- Optional: Additional column for other mega menu content -->
+                                    <!-- <div class="col-md-2">
+                                        <h5 style="margin-bottom: 15px; margin-left: 7px; font-weight: bold; color: #000;">
+                                            SHOP BY PRICE
+                                        </h5>
+                                        <ul>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=0-10000">Under 10k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=10000-20000">10k to 20k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=20000-30000">20k to 30k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=30000-1067526">Above 30k</a></li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- Right portion: Menu image or additional content -->
+                            <div class="col-md-4">
+                                <a class="nav_links menu-w-s img-loading" href="http://vjapp.com:8080/gold.html">
+                                    <!-- Replace the src attribute below with your desired image URL -->
+                                    <img class="w-100" alt="Gold" src="https://cdnmedia-breeze.vaibhavjewellers.com/media/gold_megamenu_new.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                            </li>
+                    <li class="categories">
+                <!-- Parent category link -->
+                <a class="level-top" href="http://vjapp.com:8080/diamond.html">
+                    Diamond                </a>
+
+                                    <div class="menu-dropdown container-fluid" style="top: auto;">
+                        <div class="row menu-dropdown-row">
+                            <!-- Left portion (Main Shop By Category and subcategories) -->
+                            <div class="col-md-8 menu-list">
+                                <div class="row">
+                                    <div class="col-md-10 main-shopby">
+                                        <h5 style="margin-bottom: 15px; margin-left: 10px; font-weight: bold; color: #000;">
+                                            SHOP BY CATEGORY
+                                        </h5>
+                                        <div class="row">
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Women                                                    </h2>
+                                                                                                            <ul class="list-unstyled">
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/bangles.html">
+                                                                        Bangles                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/earrings.html">
+                                                                        Earrings                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/mangalsutra.html">
+                                                                        Mangalsutra                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/nosepins.html">
+                                                                        Nosepins                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/pendant-sets.html">
+                                                                        Pendant Sets                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/vaddanam.html">
+                                                                        Vaddanam                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/bracelets.html">
+                                                                        Bracelets                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/necklace.html">
+                                                                         Necklace                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/pendants.html">
+                                                                        Pendants                                                                    </a>
+                                                                </li>
+                                                                                                                            <li>
+                                                                    <a class="nav_links img-loading" style="text-transform: none; font-size: 15px;" href="http://vjapp.com:8080/diamond/women/rings.html">
+                                                                        Rings                                                                    </a>
+                                                                </li>
+                                                                                                                    </ul>
+                                                                                                    </div>
+                                                                                    </div>
+                                    </div>
+                                    <!-- Optional: Additional column for other mega menu content -->
+                                    <!-- <div class="col-md-2">
+                                        <h5 style="margin-bottom: 15px; margin-left: 7px; font-weight: bold; color: #000;">
+                                            SHOP BY PRICE
+                                        </h5>
+                                        <ul>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=0-10000">Under 10k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=10000-20000">10k to 20k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=20000-30000">20k to 30k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=30000-1067526">Above 30k</a></li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- Right portion: Menu image or additional content -->
+                            <div class="col-md-4">
+                                <a class="nav_links menu-w-s img-loading" href="http://vjapp.com:8080/diamond.html">
+                                    <!-- Replace the src attribute below with your desired image URL -->
+                                    <img class="w-100" alt="Diamond" src="https://cdnmedia-breeze.vaibhavjewellers.com/media/gold_megamenu_new.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                            </li>
+                    <li class="categories">
+                <!-- Parent category link -->
+                <a class="level-top" href="http://vjapp.com:8080/silver.html">
+                    Silver                </a>
+
+                                    <div class="menu-dropdown container-fluid" style="top: auto;">
+                        <div class="row menu-dropdown-row">
+                            <!-- Left portion (Main Shop By Category and subcategories) -->
+                            <div class="col-md-8 menu-list">
+                                <div class="row">
+                                    <div class="col-md-10 main-shopby">
+                                        <h5 style="margin-bottom: 15px; margin-left: 10px; font-weight: bold; color: #000;">
+                                            SHOP BY CATEGORY
+                                        </h5>
+                                        <div class="row">
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Silver Gifts                                                    </h2>
+                                                                                                    </div>
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                         Pooja Articles                                                    </h2>
+                                                                                                    </div>
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Dinner Sets                                                    </h2>
+                                                                                                    </div>
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Jewellery                                                    </h2>
+                                                                                                    </div>
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Glasses & Tumblers                                                    </h2>
+                                                                                                    </div>
+                                                                                            <div class="col-md-3" style="padding-left: 15px !important;">
+                                                    <!-- Display subcategory title -->
+                                                    <h2 style="font-size: 14px; text-underline-position: under; text-decoration: underline;">
+                                                        Silver Coins                                                    </h2>
+                                                                                                    </div>
+                                                                                    </div>
+                                    </div>
+                                    <!-- Optional: Additional column for other mega menu content -->
+                                    <!-- <div class="col-md-2">
+                                        <h5 style="margin-bottom: 15px; margin-left: 7px; font-weight: bold; color: #000;">
+                                            SHOP BY PRICE
+                                        </h5>
+                                        <ul>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=0-10000">Under 10k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=10000-20000">10k to 20k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=20000-30000">20k to 30k</a></li>
+                                            <li><a style="text-transform: none; font-size: 15px;" href="https://www.example.com?price=30000-1067526">Above 30k</a></li>
+                                        </ul>
+                                    </div> -->
+                                </div>
+                            </div>
+                            <!-- Right portion: Menu image or additional content -->
+                            <div class="col-md-4">
+                                <a class="nav_links menu-w-s img-loading" href="http://vjapp.com:8080/silver.html">
+                                    <!-- Replace the src attribute below with your desired image URL -->
+                                    <img class="w-100" alt="Silver" src="https://cdnmedia-breeze.vaibhavjewellers.com/media/gold_megamenu_new.jpg">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                            </li>
+                    <li class="categories">
+                <!-- Parent category link -->
+                <a class="level-top" href="http://vjapp.com:8080/gold-coins.html">
+                    Gold Coins                </a>
+
+                            </li>
+                    <li class="categories">
+                <!-- Parent category link -->
+                <a class="level-top" href="http://vjapp.com:8080/gift-cards.html">
+                    Gift Cards                </a>
+
+                            </li>
+                    <li class="categories">
+                <!-- Parent category link -->
+                <a class="level-top" href="http://vjapp.com:8080/video-shopping.html">
+                    Video Shopping                </a>
+
+                            </li>
+                    <li class="categories">
+                <!-- Parent category link -->
+                <a class="level-top" href="http://vjapp.com:8080/try-on.html">
+                    Try On                </a>
+
+                            </li>
+                <li class="categories">
+            <a href="#" class="nr-btn">NEW ARRIVALS</a>
+        </li>
+    </ul>
+</div>

@@ -11,6 +11,28 @@ $storeUrl = $block->getUrl('');
 <body>
     <div class="top-bar">
         <?php 
+            // For demonstration, we'll use the Object Manager in the template.
+            $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
+            $customerSession = $objectManager->get(\Magento\Customer\Model\Session::class);
+
+            if ($customerSession->isLoggedIn()) {
+                // If the customer is logged in, show "My Account" linking to customer account page.
+                $loginLabel = __('My Account');
+                $loginUrl = $block->getUrl('customer/account');
+                $iconClass  = 'fas fa-user';
+
+                $logoutUrl    = $block->getUrl('customer/account/logout');
+                $logoutIcon   = 'fas fa-sign-out-alt';
+            } else {
+                // If the customer is not logged in, show "Login" linking to the login page.
+                $loginLabel = __('Login');
+                $loginUrl = $block->getUrl('customer/account/login');
+                $iconClass  = 'fas fa-user-lock'; 
+
+                $registerUrl  = $block->getUrl('customer/account/create');
+                $registerIcon = 'fas fa-user-plus';
+            }   
+
             $objectManager = \Magento\Framework\App\ObjectManager::getInstance();
             $scopeConfig = $objectManager->get('\Magento\Framework\App\Config\ScopeConfigInterface');
             
@@ -34,10 +56,25 @@ $storeUrl = $block->getUrl('');
         </div>
     </div>
     <div class="header">
-        <div class="left-links">
+        <!-- <div class="left-links">
             <a href="<?php echo $block->getUrl('customer/account/login'); ?>"><i class="fas fa-user-lock"></i> Login</a>
             <a href="<?php echo $block->getUrl('customer/account/create'); ?>"><i class="fas fa-sign-out-alt"></i> Register</a>
             <a href="<?php echo $block->getUrl('wishlist'); ?>"><i class="fas fa-heart"></i> Wishlist</a>
+        </div> -->
+        <div class="left-links">
+            <a href="<?= $loginUrl; ?>"><i class="<?= $iconClass ?>"></i> <?= $loginLabel; ?></a>
+
+            <?php if ($customerSession->isLoggedIn()) : ?>
+                <!-- Display Logout Link if logged in -->
+                <a href="<?= $logoutUrl ?>" onclick="return confirm('Are you sure you want to logout?');">
+                    <i class="<?= $logoutIcon ?>"></i> <?= __('Logout'); ?>
+                </a>
+            <?php else : ?>
+                <!-- Display Register Link if not logged in -->
+                <a href="<?= $registerUrl; ?>"><i class="<?= $registerIcon ?>"></i> <?= __('Register'); ?></a>
+            <?php endif; ?>
+
+            <a href="<?= $block->getUrl('wishlist'); ?>"><i class="fas fa-heart"></i> <?= __('Wishlist'); ?></a>
         </div>
         <div class="logo">
             <a class="logo" href="<?= $storeUrl ?>" title="" aria-label="store logo">
