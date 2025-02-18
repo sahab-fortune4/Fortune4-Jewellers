@@ -5,8 +5,8 @@ body {
     font-size: 1.3rem!important;
 }
 
-.top-90{
-    top: 90px !important;
+.custom-top-100{
+    top: 100px !important;
 }
 
 .top-bar {
@@ -239,12 +239,13 @@ body {
     z-index: 9;
     left: 0;
     min-width: 1300px;
-    padding-top: 120px;
+    padding-top: 20px;
 }
 
 
 .categories:hover .menu-dropdown {
-    display: block
+    display: block;
+    cursor: pointer;
 }
 li.categories:hover:before {
     width: 100%;

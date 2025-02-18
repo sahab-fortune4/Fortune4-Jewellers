@@ -1,10 +1,10 @@
 <?php
-namespace Magento\Ui\Model\Manager;
+namespace Magento\ReCaptchaVersion2Invisible\Model\Adminhtml\UiConfigProvider;
 
 /**
- * Proxy class for @see \Magento\Ui\Model\Manager
+ * Proxy class for @see \Magento\ReCaptchaVersion2Invisible\Model\Adminhtml\UiConfigProvider
  */
-class Proxy extends \Magento\Ui\Model\Manager implements \Magento\Framework\ObjectManager\NoninterceptableInterface
+class Proxy extends \Magento\ReCaptchaVersion2Invisible\Model\Adminhtml\UiConfigProvider implements \Magento\Framework\ObjectManager\NoninterceptableInterface
 {
     /**
      * Object Manager instance
@@ -23,7 +23,7 @@ class Proxy extends \Magento\Ui\Model\Manager implements \Magento\Framework\Obje
     /**
      * Proxied instance
      *
-     * @var \Magento\Ui\Model\Manager
+     * @var \Magento\ReCaptchaVersion2Invisible\Model\Adminhtml\UiConfigProvider
      */
     protected $_subject = null;
 
@@ -41,7 +41,7 @@ class Proxy extends \Magento\Ui\Model\Manager implements \Magento\Framework\Obje
      * @param string $instanceName
      * @param bool $shared
      */
-    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\Ui\\Model\\Manager', $shared = true)
+    public function __construct(\Magento\Framework\ObjectManagerInterface $objectManager, $instanceName = '\\Magento\\ReCaptchaVersion2Invisible\\Model\\Adminhtml\\UiConfigProvider', $shared = true)
     {
         $this->_objectManager = $objectManager;
         $this->_instanceName = $instanceName;
@@ -75,7 +75,7 @@ class Proxy extends \Magento\Ui\Model\Manager implements \Magento\Framework\Obje
     /**
      * Get proxied instance
      *
-     * @return \Magento\Ui\Model\Manager
+     * @return \Magento\ReCaptchaVersion2Invisible\Model\Adminhtml\UiConfigProvider
      */
     protected function _getSubject()
     {
@@ -90,32 +90,8 @@ class Proxy extends \Magento\Ui\Model\Manager implements \Magento\Framework\Obje
     /**
      * {@inheritdoc}
      */
-    public function getData($name)
+    public function get() : array
     {
-        return $this->_getSubject()->getData($name);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function prepareData($name)
-    {
-        return $this->_getSubject()->prepareData($name);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function createRawComponentData($component, $evaluated = true)
-    {
-        return $this->_getSubject()->createRawComponentData($component, $evaluated);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getReader($name)
-    {
-        return $this->_getSubject()->getReader($name);
+        return $this->_getSubject()->get();
     }
 }
