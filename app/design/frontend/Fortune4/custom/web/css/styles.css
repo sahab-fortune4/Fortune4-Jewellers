@@ -4,6 +4,11 @@ body {
     padding: 0;
     font-size: 1.3rem!important;
 }
+
+.top-25{
+    top: 25px;
+}
+
 .top-bar {
     background-color: #6A1B9A;
     color: white;
@@ -27,7 +32,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
+    /* border-bottom: 1px solid #ddd; */
 }
 .header .left-links,
 .header .right-links {
