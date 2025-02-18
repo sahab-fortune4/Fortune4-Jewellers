@@ -5,8 +5,8 @@ body {
     font-size: 1.3rem!important;
 }
 
-.top-25{
-    top: 25px;
+.top-90{
+    top: 90px !important;
 }
 
 .top-bar {
@@ -239,7 +239,7 @@ body {
     z-index: 9;
     left: 0;
     min-width: 1300px;
-    padding-top: 10px;
+    padding-top: 120px;
 }
 
 
