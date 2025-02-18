@@ -1360,3 +1360,5 @@
 [2025-02-18T06:01:51.548693+00:00] main.CRITICAL: Requested path frontend/Vaibhav/jewellers/en_US/fonts/Luma-Icons.woff2 is wrong. [] []
 [2025-02-18T06:01:51.768341+00:00] main.ERROR: Requested path frontend/Vaibhav/jewellers/en_US/css/print.css is wrong. [] []
 [2025-02-18T06:01:51.771601+00:00] main.CRITICAL: Requested path frontend/Vaibhav/jewellers/en_US/css/print.css is wrong. [] []
+[2025-02-18T06:03:32.073348+00:00] main.ERROR: Requested path frontend/Vaibhav/jewellers/en_US/requirejs/require.js is wrong. [] []
+[2025-02-18T06:03:32.077618+00:00] main.CRITICAL: Requested path frontend/Vaibhav/jewellers/en_US/requirejs/require.js is wrong. [] []
