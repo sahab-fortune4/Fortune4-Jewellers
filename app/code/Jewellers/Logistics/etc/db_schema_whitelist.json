@@ -1,0 +1,14 @@
+{
+    "jewellers_logistics_carrier": {
+        "column": {
+            "entity_id": true,
+            "carrier_code": true,
+            "title": true,
+            "status": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "JEWELLERS_LOGISTICS_CARRIER_CARRIER_CODE": true
+        }
+    }
+}

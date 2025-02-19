@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Config/etc/menu.xsd">
+    <menu>
+        <add id="Jewellers_Logistics::logistics" title="Logistics" module="Jewellers_Logistics" sortOrder="10" parent="Magento_Sales::sales" action="logistics/carrier/index" resource="Jewellers_Logistics::logistics"/>
+
+    </menu>
+</config>
