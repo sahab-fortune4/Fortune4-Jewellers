@@ -448,3 +448,7 @@ li.categories:hover:before {
     border: none;
     border-radius: 5px;
 }
+
+.page-main{
+    margin-top: 4rem !important;
+}
