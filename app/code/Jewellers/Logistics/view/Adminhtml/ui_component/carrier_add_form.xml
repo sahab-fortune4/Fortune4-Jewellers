@@ -55,6 +55,13 @@
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">carrier_code</item>
                     <item name="dataScope" xsi:type="string">carrier_code</item>
+                    <!-- Validataion rules -->
+                    <item name="validation" xsi:type="array">
+                        <item name="required-entry" xsi:type="boolean">true</item>
+                        <item name="validate-alphanum" xsi:type="boolean">true</item>
+                        <item name="min_text_length" xsi:type="number">3</item>
+                        <item name="max_text_length" xsi:type="number">20</item>
+                    </item>
                 </item>
             </argument>
         </field>
@@ -68,6 +75,13 @@
                     <item name="formElement" xsi:type="string">input</item>
                     <item name="source" xsi:type="string">title</item>
                     <item name="dataScope" xsi:type="string">title</item>
+                    <!-- Validataion rules -->
+                    <item name="validation" xsi:type="array">
+                        <item name="required-entry" xsi:type="boolean">true</item>
+                        <item name="validate-alpha" xsi:type="boolean">true</item>
+                        <item name="min_text_length" xsi:type="number">3</item>
+                        <item name="max_text_length" xsi:type="number">20</item>
+                    </item>
                 </item>
             </argument>
         </field>

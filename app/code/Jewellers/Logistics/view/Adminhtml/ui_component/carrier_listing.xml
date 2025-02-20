@@ -21,13 +21,13 @@
     <dataSource name="carrier_listing_data_source" component="Magento_Ui/js/grid/provider">
         <settings>
             <storageConfig>
-                <param name="indexField" xsi:type="string">id</param>
+                <param name="indexField" xsi:type="string">entity_id</param>
             </storageConfig>
             <updateUrl path="mui/index/render"/>
         </settings>
         <dataProvider class="Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider" name="carrier_listing_data_source">
             <settings>
-                <requestFieldName>id</requestFieldName>
+                <requestFieldName>entity_id</requestFieldName>
                 <primaryFieldName>entity_id</primaryFieldName>
             </settings>
         </dataProvider>
@@ -62,7 +62,7 @@
                         <message translate="true">Are you sure you wan't to delete selected Stores?</message>
                         <title translate="true">Delete Store</title>
                     </confirm>
-                    <url path="#"/>
+                    <url path="logistics/carrier/massDelete"/>
                     <type>delete</type>
                     <label translate="true">Delete</label>
                 </settings>
@@ -73,7 +73,7 @@
     <columns name="carrier_columns">
         <selectionsColumn name="ids">
             <settings>
-                <indexField>id</indexField>
+                <indexField>entity_id</indexField>
                 <resizeEnabled>false</resizeEnabled>
                 <resizeDefaultWidth>55</resizeDefaultWidth>
             </settings>
@@ -111,7 +111,7 @@
 
         <actionsColumn name="actions" class="Jewellers\Logistics\Ui\Component\Listing\Column\Actions">
             <settings>
-                <indexField>id</indexField>
+                <indexField>entity_id</indexField>
                 <resizeEnabled>false</resizeEnabled>
             </settings>
         </actionsColumn>

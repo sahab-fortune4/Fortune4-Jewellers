@@ -8,10 +8,10 @@ class Interceptor extends \Jewellers\Logistics\Model\ResourceModel\Carrier\Grid\
 {
     use \Magento\Framework\Interception\Interceptor;
 
-    public function __construct(\Magento\Framework\Data\Collection\EntityFactoryInterface $entityFactory, \Psr\Log\LoggerInterface $logger, \Magento\Framework\Data\Collection\Db\FetchStrategyInterface $fetchStrategy, \Magento\Framework\Event\ManagerInterface $eventManager, ?\Magento\Framework\DB\Adapter\AdapterInterface $connection = null, ?\Magento\Framework\Model\ResourceModel\Db\AbstractDb $resource = null)
+    public function __construct(\Magento\Framework\Data\Collection\EntityFactoryInterface $entityFactory, \Psr\Log\LoggerInterface $logger, \Magento\Framework\Data\Collection\Db\FetchStrategyInterface $fetchStrategy, \Magento\Framework\Event\ManagerInterface $eventManager, $mainTable, $eventPrefix, $eventObject, $resourceModel, $model = 'Magento\\Framework\\View\\Element\\UiComponent\\DataProvider\\Document', $connection = null, ?\Magento\Framework\Model\ResourceModel\Db\AbstractDb $resource = null)
     {
         $this->___init();
-        parent::__construct($entityFactory, $logger, $fetchStrategy, $eventManager, $connection, $resource);
+        parent::__construct($entityFactory, $logger, $fetchStrategy, $eventManager, $mainTable, $eventPrefix, $eventObject, $resourceModel, $model, $connection, $resource);
     }
 
     /**
@@ -30,6 +30,15 @@ class Interceptor extends \Jewellers\Logistics\Model\ResourceModel\Carrier\Grid\
     {
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'setAggregations');
         return $pluginInfo ? $this->___callPlugins('setAggregations', func_get_args(), $pluginInfo) : parent::setAggregations($aggregations);
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getAllIds($limit = null, $offset = null)
+    {
+        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getAllIds');
+        return $pluginInfo ? $this->___callPlugins('getAllIds', func_get_args(), $pluginInfo) : parent::getAllIds($limit, $offset);
     }
 
     /**
@@ -192,15 +201,6 @@ class Interceptor extends \Jewellers\Logistics\Model\ResourceModel\Carrier\Grid\
     {
         $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getTable');
         return $pluginInfo ? $this->___callPlugins('getTable', func_get_args(), $pluginInfo) : parent::getTable($table);
-    }
-
-    /**
-     * {@inheritdoc}
-     */
-    public function getAllIds()
-    {
-        $pluginInfo = $this->pluginList->getNext($this->subjectType, 'getAllIds');
-        return $pluginInfo ? $this->___callPlugins('getAllIds', func_get_args(), $pluginInfo) : parent::getAllIds();
     }
 
     /**

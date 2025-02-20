@@ -31,11 +31,11 @@ class Delete extends \Magento\Backend\App\Action
         /** @var \Magento\Backend\Model\View\Result\Redirect $resultRedirect */
         $resultRedirect = $this->resultRedirectFactory->create();
         // check if we know what should be deleted
-        $id = $this->getRequest()->getParam('id');
-        if ($id) {
+        $entity_id = $this->getRequest()->getParam('entity_id');
+        if ($entity_id) {
             try {
                 // init model and delete
-                $model = $this->collectionFactory->create()->load($id);
+                $model = $this->collectionFactory->create()->load($entity_id);
                 $model->delete();
                 // display success message
                 $this->messageManager->addSuccessMessage(__('You deleted the item.'));
@@ -45,7 +45,7 @@ class Delete extends \Magento\Backend\App\Action
                 // display error message
                 $this->messageManager->addErrorMessage($e->getMessage());
                 // go back to edit form
-                return $resultRedirect->setPath('*/*/edit', ['id' => $id]);
+                return $resultRedirect->setPath('*/*/edit', ['entity_id' => $entity_id]);
             }
         }
         // display error message

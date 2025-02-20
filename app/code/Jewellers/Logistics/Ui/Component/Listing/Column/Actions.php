@@ -68,13 +68,13 @@ class Actions extends Column
     
                 // Edit URL
                 $item[$name]['edit'] = [
-                    'href' => $this->urlBuilder->getUrl($this->editUrl, ['id' => $item['id']]),
+                    'href' => $this->urlBuilder->getUrl($this->editUrl, ['entity_id' => $item['entity_id']]),
                     'label' => __('Edit')
                 ];
     
                 // Delete URL and confirmation message with the product name
                 $item[$name]['delete'] = [
-                    'href' => $this->urlBuilder->getUrl(self::URL_PATH_DELETE, ['id' => $item['id']]),
+                    'href' => $this->urlBuilder->getUrl(self::URL_PATH_DELETE, ['entity_id' => $item['entity_id']]),
                     'label' => __('Delete'),
                     'confirm' => [
                         'title' => __('Delete %1', $carrier_code ),  // Dynamic title with product name
