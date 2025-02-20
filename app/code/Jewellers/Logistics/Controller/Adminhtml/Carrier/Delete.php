@@ -15,7 +15,7 @@ class Delete extends \Magento\Backend\App\Action
      */
     public function __construct(
         Context $context,
-        \Fortune4\AdminMenu\Model\PurchasedFactory $collectionFactory
+        \Jewellers\Logistics\Model\CarrierFactory $collectionFactory
     ) {
         $this->collectionFactory = $collectionFactory;
         parent::__construct($context);

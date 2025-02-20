@@ -57,10 +57,7 @@ class Add extends \Magento\Backend\App\Action
         $resultPage = $this->resultPageFactory->create();
         $resultPage->setActiveMenu('Jewellers_Logistics::logistics');
         $resultPage->addBreadcrumb(__('Logistics Carriers'), __('Logistics Carriers'));
-        $resultPage->addBreadcrumb(__('Logistics Carriers'), __('Logistics Carriers'));
         $resultPage->getConfig()->getTitle()->prepend(__('Add Logistics Carriers'));
-
-      
         return $resultPage;
     }
 

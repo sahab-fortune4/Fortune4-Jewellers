@@ -12,7 +12,7 @@ class Carrier extends AbstractModel
 
     public function getIdFieldName()
     {
-        return 'id';  // Ensure the correct primary key column is set
+        return 'entity_id';  // Ensure the correct primary key column is set
     }
 }
 

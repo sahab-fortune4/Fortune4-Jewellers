@@ -7,6 +7,6 @@ class Carrier extends AbstractDb
 {
     protected function _construct()
     {
-        $this->_init('jewellers_logistics_carrier', 'id');
+        $this->_init('jewellers_logistics_carrier', 'entity_id');
     }
 }

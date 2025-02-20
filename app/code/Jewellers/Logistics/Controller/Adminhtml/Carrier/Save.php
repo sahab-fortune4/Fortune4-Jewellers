@@ -4,15 +4,15 @@ namespace Jewellers\Logistics\Controller\Adminhtml\Carrier;
 
 use Magento\Backend\App\Action;
 use Magento\Backend\Model\Session;
-use Jewellers\Logistics\Model\Carrier;
+use Jewellers\Logistics\Model\Carrier as CarrierModel;
 
 class Save extends \Magento\Backend\App\Action
 {
 
     /**
-     * @var Purchased
+     * @var CarrierModel
      */
-    protected $reviewData;
+    protected $logisticsData;
 
     /**
      * @var Session
@@ -21,16 +21,16 @@ class Save extends \Magento\Backend\App\Action
 
     /**
      * @param Action\Context $context
-     * @param Purchased $reviewData
+     * @param CarrierModel $logisticsData
      * @param Session $adminsession
      */
     public function __construct(
         Action\Context $context,
-        Purchased $reviewData,
+        CarrierModel $logisticsModalData,
         Session $adminsession
     ) {
         parent::__construct($context);
-        $this->reviewData = $reviewData;
+        $this->logisticsData = $logisticsModalData;
         $this->adminsession = $adminsession;
     }
 
@@ -54,9 +54,9 @@ class Save extends \Magento\Backend\App\Action
             // print_r($data);
             // die;
             // $data['product_id'] = 0;
-            $review_id = $this->getRequest()->getParam('id');
-            if ($review_id) {
-                $this->reviewData->load($review_id);
+            $logistics_id = $this->getRequest()->getParam('entity_id');
+            if ($logistics_id) {
+                $this->logisticsData->load($logistics_id);
                 $data['updated_at'] = date('Y-m-d H:i:s'); // Update the updated_at field
             }else {
                 // When adding new record, we set created_at and updated_at
@@ -64,17 +64,17 @@ class Save extends \Magento\Backend\App\Action
                 $data['updated_at'] = date('Y-m-d H:i:s'); // Set updated_at for new records
             }
 
-            $this->reviewData->setData($data);
+            $this->logisticsData->setData($data);
 
             try {
-                $this->reviewData->save();
+                $this->logisticsData->save();
                 $this->messageManager->addSuccess(__('The data has been saved.'));
                 $this->adminsession->setFormData(false);
                 if ($this->getRequest()->getParam('back')) {
                     if ($this->getRequest()->getParam('back') == 'add') {
                         return $resultRedirect->setPath('*/*/add');
                     } else {
-                        return $resultRedirect->setPath('*/*/edit', ['id' => $this->reviewData->getId(), '_current' => true]);
+                        return $resultRedirect->setPath('*/*/edit', ['entity_id' => $this->logisticsData->getId(), '_current' => true]);
                     }
                 }
 
