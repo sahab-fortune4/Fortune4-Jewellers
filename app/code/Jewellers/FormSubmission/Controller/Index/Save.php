@@ -26,6 +26,8 @@ class Save extends Action
 
         if ($data) {
             try {
+                $data['created_at'] = date('Y-m-d H:i:s'); // Set created_at for new records
+                $data['updated_at'] = date('Y-m-d H:i:s'); // Set updated_at for new records
                 $submission = $this->submissionFactory->create();
                 $submission->setData($data);
                 $submission->save();
