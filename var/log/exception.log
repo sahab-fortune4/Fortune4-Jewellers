@@ -1,10 +1,10 @@
-[2025-02-20T06:32:29.626308+00:00] main.CRITICAL: Exception: Warning: Undefined array key "id" in D:\xamp8.0\htdocs\VJ\app\code\Jewellers\Logistics\Ui\Component\Listing\Column\Actions.php on line 71 in D:\xamp8.0\htdocs\VJ\vendor\magento\framework\App\ErrorHandler.php:62
+[2025-02-20T10:47:41.045285+00:00] main.CRITICAL: Exception: Not registered handle carrier_listing_data_source in D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\DataProvider\CollectionFactory.php:49
 Stack trace:
-#0 D:\xamp8.0\htdocs\VJ\app\code\Jewellers\Logistics\Ui\Component\Listing\Column\Actions.php(71): Magento\Framework\App\ErrorHandler->handler(2, 'Undefined array...', 'D:\\xamp8.0\\htdo...', 71)
-#1 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\Context.php(403): Jewellers\Logistics\Ui\Component\Listing\Column\Actions->prepareDataSource(Array)
-#2 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\Context.php(400): Magento\Framework\View\Element\UiComponent\Context->prepareDataSource(Array, Object(Jewellers\Logistics\Ui\Component\Listing\Column\Actions))
-#3 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\Context.php(400): Magento\Framework\View\Element\UiComponent\Context->prepareDataSource(Array, Object(Magento\Ui\Component\Listing\Columns))
-#4 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\Context.php(251): Magento\Framework\View\Element\UiComponent\Context->prepareDataSource(Array, Object(Magento\Ui\Component\Listing))
+#0 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\DataProvider\Reporting.php(45): Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory->getReport('carrier_listing...')
+#1 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\DataProvider\DataProvider.php(317): Magento\Framework\View\Element\UiComponent\DataProvider\Reporting->search(Object(Magento\Framework\Api\Search\SearchCriteria))
+#2 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\DataProvider\DataProvider.php(286): Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider->getSearchResult()
+#3 D:\xamp8.0\htdocs\VJ\vendor\magento\module-ui\Component\Listing.php(38): Magento\Framework\View\Element\UiComponent\DataProvider\DataProvider->getData()
+#4 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Element\UiComponent\Context.php(250): Magento\Ui\Component\Listing->getDataSourceData()
 #5 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Layout\Generic.php(75): Magento\Framework\View\Element\UiComponent\Context->getDataSourceData(Object(Magento\Ui\Component\Listing))
 #6 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\View\Layout\Generator\Structure.php(46): Magento\Framework\View\Layout\Generic->build(Object(Magento\Ui\Component\Listing))
 #7 D:\xamp8.0\htdocs\VJ\vendor\magento\module-ui\TemplateEngine\Xhtml\Result.php(102): Magento\Framework\View\Layout\Generator\Structure->generate(Object(Magento\Ui\Component\Listing))
@@ -67,4 +67,4 @@ Stack trace:
 #64 D:\xamp8.0\htdocs\VJ\generated\code\Magento\Framework\App\Http\Interceptor.php(23): Magento\Framework\App\Http->launch()
 #65 D:\xamp8.0\htdocs\VJ\vendor\magento\framework\App\Bootstrap.php(264): Magento\Framework\App\Http\Interceptor->launch()
 #66 D:\xamp8.0\htdocs\VJ\pub\index.php(30): Magento\Framework\App\Bootstrap->run(Object(Magento\Framework\App\Http\Interceptor))
-#67 {main} {"exception":"[object] (Exception(code: 0): Warning: Undefined array key \"id\" in D:\\xamp8.0\\htdocs\\VJ\\app\\code\\Jewellers\\Logistics\\Ui\\Component\\Listing\\Column\\Actions.php on line 71 at D:\\xamp8.0\\htdocs\\VJ\\vendor\\magento\\framework\\App\\ErrorHandler.php:62)"} []
+#67 {main} {"exception":"[object] (Exception(code: 0): Not registered handle carrier_listing_data_source at D:\\xamp8.0\\htdocs\\VJ\\vendor\\magento\\framework\\View\\Element\\UiComponent\\DataProvider\\CollectionFactory.php:49)"} []

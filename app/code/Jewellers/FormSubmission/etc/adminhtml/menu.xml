@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Jewellers_FormSubmission::submission" title="Custom Form" module="Jewellers_FormSubmission" sortOrder="51" resource="Jewellers_FormSubmission::submission"/>
+        <add id="Jewellers_FormSubmission::customFrm" title="Form Submission Data" module="Jewellers_FormSubmission" sortOrder="10" parent="Jewellers_FormSubmission::submission" action="formsubmission/submission/index" resource="Jewellers_FormSubmission::customFrm"/>
+        
+    </menu>
+</config>

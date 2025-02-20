@@ -1,0 +1,18 @@
+{
+    "jewellers_form_submission": {
+        "column": {
+            "entity_id": true,
+            "name": true,
+            "email": true,
+            "contact": true,
+            "area_name": true,
+            "question": true,
+            "form_type": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    }
+}
