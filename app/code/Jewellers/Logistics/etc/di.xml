@@ -31,7 +31,4 @@
         </arguments>
     </type>
 
-    <type name="Magento\Shipping\Model\Config\Source\Carrier">
-        <plugin name="jewellers_logistics_shipping_carrier_options" type="Jewellers\Logistics\Plugin\ShippingCarrierOptions" sortOrder="10" />
-    </type>
 </config>
