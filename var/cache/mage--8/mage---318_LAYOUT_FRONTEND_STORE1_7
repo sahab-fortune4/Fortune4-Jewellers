@@ -1,4 +1,4 @@
-a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1740050770;s:6:"expire";i:1771586770;s:4:"tags";s:37:"318_LAYOUT_GENERAL_CACHE_TAG,318_MAGE";}
+a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1740122922;s:6:"expire";i:1771658922;s:4:"tags";s:37:"318_LAYOUT_GENERAL_CACHE_TAG,318_MAGE";}
 <?xml version="1.0"?>
 <layouts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><handle id="catalog_category_view"><body/>
 </handle><handle id="catalogsearch_advanced_index"><body/>
@@ -7222,7 +7222,7 @@ a:4:{s:4:"hash";s:0:"";s:5:"mtime";i:1740050770;s:6:"expire";i:1771586770;s:4:"t
    <referenceBlock name="footer" remove="true"/>
    <referenceBlock name="copyright" remove="true"/>
    <referenceContainer name="page.wrapper">
-      <block class="Magento\Framework\View\Element\Template" name="custom.top.bar" template="Magento_Theme::html/top-bar.phtml" before="header.container"/>
+      <block class="Jewellers\Logistics\Block\Html\TopBar" name="custom.top.bar" template="Magento_Theme::html/top-bar.phtml" before="header.container"/>
       <block class="Magento\Theme\Block\Html\Topmenu" name="custom.top.menu" as="topMenu" template="Magento_Theme::html/custom_menu.phtml" after="header.container"/>
    </referenceContainer>
    <referenceContainer name="page.wrapper">

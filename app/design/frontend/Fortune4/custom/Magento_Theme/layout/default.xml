@@ -16,7 +16,7 @@
               <referenceBlock name="copyright" remove="true" />
               <!-- Top Bar and Menu Blocks (if needed) -->
               <referenceContainer name="page.wrapper">
-                     <block class="Magento\Framework\View\Element\Template" name="custom.top.bar" template="Magento_Theme::html/top-bar.phtml" before="header.container"/>
+                     <block class="Jewellers\Logistics\Block\Html\TopBar" name="custom.top.bar" template="Magento_Theme::html/top-bar.phtml" before="header.container"/>
                      
                      <block class="Magento\Theme\Block\Html\Topmenu" name="custom.top.menu" as="topMenu" template="Magento_Theme::html/custom_menu.phtml" after="header.container"/>
               </referenceContainer>
